@@ -9,6 +9,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
-    baseUrl: 'https://www.google.com/search?q=calculator/'
+    baseUrl: 'https://www.google.com/search?q=calculator'
   },
 })

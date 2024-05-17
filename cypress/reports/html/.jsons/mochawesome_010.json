@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-05-17T07:48:14.938Z",
+    "end": "2024-05-17T07:48:15.776Z",
+    "duration": 838,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "4621cf59-d01d-41e7-9b24-799301cef5bb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functional\\viewport_test.cy.js",
+      "file": "cypress\\e2e\\functional\\viewport_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+          "title": "Verify the visibility of calculator elements on the screen",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "[Macbook-15] Check visibility of elements",
+              "fullTitle": "Verify the visibility of calculator elements on the screen [Macbook-15] Check visibility of elements",
+              "timedOut": null,
+              "duration": 766,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\functional\\\\viewport_test.cy.js\\\\Verify the visibility of calculator elements on the screen -- [Macbook-15] Check visibility of elements -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.viewport(\"macbook-15\");\ncy.viewportVisibilityElements();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGL6XnLIGIjAdbLFJg0fc4M5Co4Q7Y1crCmcgov2vhrSGCWKSw3dJu3AF-G_VQfz4Bi8mM4Z3Wk4yAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify the visibility of ca...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGL6XnLIGIjAdbLFJg0fc4M5Co4Q7Y1crCmcgov2vhrSGCWKSw3dJu3AF-G_VQfz4Bi8mM4Z3Wk4yAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify the visibility of ca...`\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.google.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://initial-project/./cypress/e2e/functional/viewport_test.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "d40052b3-6eea-4e56-a396-846def68fa97",
+              "parentUUID": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "[Macbook-11] Check visibility of elements",
+              "fullTitle": "Verify the visibility of calculator elements on the screen [Macbook-11] Check visibility of elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"macbook-11\");\ncy.viewportVisibilityElements();",
+              "err": {},
+              "uuid": "cd09a69c-aefb-4d33-a391-6d460795df09",
+              "parentUUID": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "[ipad-2] Check visibility of elements",
+              "fullTitle": "Verify the visibility of calculator elements on the screen [ipad-2] Check visibility of elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"ipad-2\");\ncy.viewportVisibilityElements();",
+              "err": {},
+              "uuid": "2d3d4295-6465-4999-8665-3eafa25ea9e9",
+              "parentUUID": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "[iphone-6+] Check visibility of elements",
+              "fullTitle": "Verify the visibility of calculator elements on the screen [iphone-6+] Check visibility of elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-6+\");\ncy.viewportVisibilityElements();",
+              "err": {},
+              "uuid": "d19eecf5-107b-4c99-9c36-42ad5bae319e",
+              "parentUUID": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "[iphone-5] Check visibility of elements",
+              "fullTitle": "Verify the visibility of calculator elements on the screen [iphone-5] Check visibility of elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(\"iphone-5\");\ncy.viewportVisibilityElements();",
+              "err": {},
+              "uuid": "aad74f0c-639f-492c-bfdb-1ca2a78df91a",
+              "parentUUID": "9e26584c-7e2d-4572-9b1b-2fdef396d4fd",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d40052b3-6eea-4e56-a396-846def68fa97"
+          ],
+          "pending": [],
+          "skipped": [
+            "cd09a69c-aefb-4d33-a391-6d460795df09",
+            "2d3d4295-6465-4999-8665-3eafa25ea9e9",
+            "d19eecf5-107b-4c99-9c36-42ad5bae319e",
+            "aad74f0c-639f-492c-bfdb-1ca2a78df91a"
+          ],
+          "duration": 766,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
