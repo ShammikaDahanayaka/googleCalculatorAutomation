@@ -20,12 +20,35 @@ npm i
 
 - [NPM](https://docs.npmjs.com/cli/install) - If you want to know what does "npm i" do
 
+#### Run this command in Terminal to install xpath packages.
+
+```
+npm install -D cypress-xpath
+```
+
+#### Run this command in Terminal to install mochawesome reporter packages.
+
+```
+npm install --save-dev mochawesome cypress-mochawesome-reporter
+```
+
 ### How to run tests:
+
+This command will open **Cypress GUI**:
+
+```
+npm run cypress:open
+```
 
 This command will execute **all avaliable** tests:
 
 ```
 npm run test:e2e
+```
+If there is any security issue in running cli, try below command
+
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 This command will execute **functional** tests:
@@ -38,12 +61,6 @@ This command will execute **smoke** tests:
 
 ```
 npm run test:e2e:smoke
-```
-
-This command will open **Cypress GUI**:
-
-```
-npm run cypress open
 ```
 
 ## Custom Commands

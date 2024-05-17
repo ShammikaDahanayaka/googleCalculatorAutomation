@@ -1,10 +1,12 @@
 const { numbers, calculatorScreen } = require("../../PageObject");
 
 describe("Verify the visibility of calculator elements on the screen", () => {
-  //it("Visit Home", () => {
+ /* it("Visit Home", () => {
+    cy.visit("/");
+  });*/
+
   beforeEach(() => {
     cy.visit("/");
-    cy.wait(100);
   });
 
   it("Calculator component should be visible", () => {
