@@ -20,13 +20,13 @@ npm i
 
 - [NPM](https://docs.npmjs.com/cli/install) - If you want to know what does "npm i" do
 
+### How to run tests:
+
 This command will open **Cypress GUI**:
 
 ```
 npm run cypress:open
 ```
-
-### How to run tests:
 
 This command will execute **all avaliable** tests:
 
