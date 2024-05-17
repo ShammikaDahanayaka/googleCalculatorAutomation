@@ -44,19 +44,21 @@ Cypress.Commands.add("clearInput", expectedDisplay => {
 
 Cypress.Commands.add("mathOperations", (input1, operation, input2) => {
   cy.get(input1.idLocator).click({ force: true });
+  //cy.xpath("//div[text()='" + input1.value + "']").click({ force: true });
 
   cy.get(calculatorScreen.resultOutput.idLocator).should(
     "contain",
     input1.value
   );
 
-  cy.get(operation.idLocator).click({ force: true });
+  cy.xpath(operation.xpath).click({ force: true });
   cy.get(calculatorScreen.resultOutput.idLocator).should(
     "contain",
     operation.displayValue
   );
 
   cy.get(input2.idLocator).click({ force: true });
+  //cy.xpath("//div[text()='" + input2.value + "']").click({ force: true });
 
   cy.get(calculatorScreen.resultOutput.idLocator).should(
     "contain",

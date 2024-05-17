@@ -125,10 +125,7 @@ cy.get('#query-btn').invoke('width').should('be.gt', 0)
 
 3.  **If you will run the test too often Google may time your test out and bring a captcha screen.**
 
-## Authors
+## Author
 
-- **Anton Filiptsov**
+- **Shammika Dahanayaka**
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
