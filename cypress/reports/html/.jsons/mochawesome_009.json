@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-05-17T07:48:12.554Z",
+    "end": "2024-05-17T07:48:13.367Z",
+    "duration": 813,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "672b0a1d-5359-4d00-b4a0-e5629c38403b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functional\\subtract_operations.cy.js",
+      "file": "cypress\\e2e\\functional\\subtract_operations.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff73c7d7-f4be-4507-8940-01c811bbd5b5",
+          "title": "Verify that the user is able to subtract",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should subtract 8 - 3",
+              "fullTitle": "Verify that the user is able to subtract Should subtract 8 - 3",
+              "timedOut": null,
+              "duration": 748,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\functional\\\\subtract_operations.cy.js\\\\Verify that the user is able to subtract -- Should subtract 8 - 3 -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.mathOperations(numbers.eight, numbers.subtract, numbers.three);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGLyXnLIGIjA6yBtcIl4-iBm0nrEZbtH9Jc3wDpaj6iN_EFv31HIHq1PiHpkfXXJjYg7lOn5XpLgyAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify that the user is abl...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGLyXnLIGIjA6yBtcIl4-iBm0nrEZbtH9Jc3wDpaj6iN_EFv31HIHq1PiHpkfXXJjYg7lOn5XpLgyAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify that the user is abl...`\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.google.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://initial-project/./cypress/e2e/functional/subtract_operations.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "f28c4c61-4fbd-418b-a058-dcc01623a988",
+              "parentUUID": "ff73c7d7-f4be-4507-8940-01c811bbd5b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should subtract 7 - 6",
+              "fullTitle": "Verify that the user is able to subtract Should subtract 7 - 6",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mathOperations(numbers.seven, numbers.subtract, numbers.six);",
+              "err": {},
+              "uuid": "a6849221-770c-4eef-aa01-3b7fc3760b7e",
+              "parentUUID": "ff73c7d7-f4be-4507-8940-01c811bbd5b5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should subtract 1 - 9",
+              "fullTitle": "Verify that the user is able to subtract Should subtract 1 - 9",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mathOperations(numbers.seven, numbers.subtract, numbers.six);",
+              "err": {},
+              "uuid": "2dc29fd6-1f14-447b-b8e6-40e282cae3ce",
+              "parentUUID": "ff73c7d7-f4be-4507-8940-01c811bbd5b5",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f28c4c61-4fbd-418b-a058-dcc01623a988"
+          ],
+          "pending": [],
+          "skipped": [
+            "a6849221-770c-4eef-aa01-3b7fc3760b7e",
+            "2dc29fd6-1f14-447b-b8e6-40e282cae3ce"
+          ],
+          "duration": 748,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

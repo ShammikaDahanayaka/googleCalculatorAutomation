@@ -1,12 +1,12 @@
 // This modal locator is used for Key Events (Key Codes)
-const modalLocator = "#cwtltblr";
+const modalLocator = "[jsname='zLiRgc']"; //SLn8gc
 
 const calculatorScreen = {
   calculatorComponent: {
-    idLocator: "#cwmcwd"
+    idLocator: "[jscontroller='GCPuBe']"
   },
   resultOutput: {
-    idLocator: "#cwos"
+    idLocator: ".qv3Wpe"
   }
 };
 const keyCode = {
@@ -23,65 +23,83 @@ const keyCode = {
 const numbers = {
   zero: {
     value: 0,
-    idLocator: "#cwbt43"
+    idLocator: "[jsname='bkEvMb']"
   },
   one: {
     value: 1,
-    idLocator: "#cwbt33",
+    idLocator: "[jsname='N10B9']",
     keyCode: "{1}"
   },
   two: {
     value: 2,
-    idLocator: "#cwbt34"
+    idLocator: "[jsname='lVjWed']"
   },
   three: {
     value: 3,
-    idLocator: "#cwbt35"
+    idLocator: "[jsname='KN1kY']"
   },
   four: {
     value: 4,
-    idLocator: "#cwbt23"
+    idLocator: "[jsname='xAP7E']"
   },
   five: {
     value: 5,
-    idLocator: "#cwbt24"
+    idLocator: "[jsname='Ax5wH']"
   },
   six: {
     value: 6,
-    idLocator: "#cwbt25"
+    idLocator: "[jsname='abcgof']"
   },
   seven: {
     value: 7,
-    idLocator: "#cwbt13"
+    idLocator: "[jsname='rk7bOd']"
   },
   eight: {
     value: 8,
-    idLocator: "#cwbt14"
+    idLocator: "[jsname='T7PMFe']"
   },
   nine: {
     value: 9,
-    idLocator: "#cwbt15"
+    idLocator: "[jsname='XoxYJ']"
   },
-  delete: {
-    idLocator: "#cwclrbtnCE"
+  deleteCE: {
+    idLocator: "[aria-label='clear entry']"
+  },
+  deleteAC: {
+    idLocator: "[aria-label='all clear']"
   },
   divide: {
-    idLocator: "#cwbt16"
+    value: "/",
+    displayValue: "÷",
+    idLocator: "[aria-label='divide']",
+    xpath: "//div[@aria-label='divide']"
   },
   multiply: {
-    idLocator: "#cwbt26"
+    value: "*",
+    displayValue: "×",
+    idLocator: "[aria-label='multiply']",
+    xpath: "//div[@aria-label='multiply']"
   },
   subtract: {
-    idLocator: "#cwbt36"
+    value: "-",
+    displayValue: "-",
+    idLocator: "[aria-label='minus']",
+    xpath: "//div[@aria-label='minus']"
   },
   add: {
-    idLocator: "#cwbt46"
+    value: "+",
+    displayValue: "+",
+    idLocator: "[aria-label='plus']",
+    xpath: "//div[@aria-label='plus']"
   },
   result: {
-    idLocator: "#cwbt45"
+    idLocator: "[aria-label='equals']",
+    xpath: "//div[@jsname='Pt8tGc']"
   },
   point: {
-    idLocator: "#cwbt44"
+    displayValue: ".",
+    idLocator: "[aria-label='point']",
+    xpath: "//div[@aria-label='point']"
   }
 };
 

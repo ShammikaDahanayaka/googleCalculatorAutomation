@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-05-17T07:47:19.504Z",
+    "end": "2024-05-17T07:47:20.036Z",
+    "duration": 532,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "318c64fe-1e13-4c33-90d4-21c6ff1a1c6a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functional\\divide_operations.cy.js",
+      "file": "cypress\\e2e\\functional\\divide_operations.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fbf16653-cb79-4318-8e56-2f00c3dacbcc",
+          "title": "Verify that the user is able to divide",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should divide 8 / 2",
+              "fullTitle": "Verify that the user is able to divide Should divide 8 / 2",
+              "timedOut": null,
+              "duration": 465,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\functional\\\\divide_operations.cy.js\\\\Verify that the user is able to divide -- Should divide 8  2 -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.mathOperations(numbers.eight, numbers.divide, numbers.two);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGIeXnLIGIjAlg2cV49cCqnUhJr1FCI8KzCFvUSWhv_k52Tk7R-fe7lqUTmRIg_KGBZnXVxF8VQEyAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify that the user is abl...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.google.com/search?q=calculator/\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 302: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dcalculator/&q=EgQyQyhhGIeXnLIGIjAlg2cV49cCqnUhJr1FCI8KzCFvUSWhv_k52Tk7R-fe7lqUTmRIg_KGBZnXVxF8VQEyAXJaAUM\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Verify that the user is abl...`\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131464:76)\n    at visitFailedByErr (https://www.google.com/__cypress/runner/cypress_runner.js:130878:12)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:131447:13)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://initial-project/./cypress/e2e/functional/divide_operations.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "5a0c8f54-4461-4c0b-bda7-663dbea557b8",
+              "parentUUID": "fbf16653-cb79-4318-8e56-2f00c3dacbcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should divide 5 / 5",
+              "fullTitle": "Verify that the user is able to divide Should divide 5 / 5",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mathOperations(numbers.five, numbers.divide, numbers.five);",
+              "err": {},
+              "uuid": "97c4bd4a-570f-4f9f-86b0-f7e47650139c",
+              "parentUUID": "fbf16653-cb79-4318-8e56-2f00c3dacbcc",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5a0c8f54-4461-4c0b-bda7-663dbea557b8"
+          ],
+          "pending": [],
+          "skipped": [
+            "97c4bd4a-570f-4f9f-86b0-f7e47650139c"
+          ],
+          "duration": 465,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
